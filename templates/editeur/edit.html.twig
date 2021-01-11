@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Editeur{% endblock %}
+
+{% block body %}
+    {% if is_granted('ROLE_Editor') %}
+        {{ include('editeur/_form.html.twig', {'button_label': 'Modifier'}) }}
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-2">
+            <a href="{{ path('editeur_index') }}"><span class="btn btn-primary"><i class="fa fa-backward">&nbsp;Retour</i> </span></a>
+        </div>
+        {{ include('editeur/_delete_form.html.twig') }}
+    </div>
+</div>
+    {% endif %}
+
+
+
+
+{% endblock %}

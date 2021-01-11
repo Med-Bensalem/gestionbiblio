@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Auteur{% endblock %}
+
+{% block body %}
+   <div class="container">
+       <div class="row">
+           <div class="col col-xs-12 col-lg-3 col-md-4 col-sm-6">
+               <b>Prénom</b>
+           </div>
+           <div class="col col-xs-12 col-lg-9 col-md-8 col-sm-6">
+               <b>{{ auteur.prenom }}</b>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col col-xs-12 col-lg-3 col-md-4 col-sm-6">
+               <b>Nom</b>
+           </div>
+           <div class="col col-xs-12 col-lg-9 col-md-8 col-sm-6">
+               <b>{{ auteur.nom }}</b>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col col-xs-12 col-lg-3 col-md-4 col-sm-6">
+               <b>Prénom</b>
+           </div>
+           <div class="col col-xs-12 col-lg-9 col-md-8 col-sm-6">
+               <b>{{ auteur.prenom }}</b>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col col-xs-12 col-lg-3 col-md-4 col-sm-6">
+               <b>Biographie</b>
+           </div>
+           <div class="col col-xs-12 col-lg-9 col-md-8 col-sm-6">
+               <b>{{ auteur.biographie }}</b>
+           </div>
+       </div>
+
+   </div>
+    <hr/>
+
+    <a href="{{ path('auteur_index') }}"><span class="btn btn-primary"><i class="fa fa-backward">&nbsp;Retour</i></span></a>
+
+{% endblock %}

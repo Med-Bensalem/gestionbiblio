@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau Auteur{% endblock %}
+
+{% block body %}
+
+
+    {{ include('auteur/_form.html.twig') }}
+
+    <a href="{{ path('auteur_index') }}"><span class="btn btn-primary"><i class="fa fa-backward">&nbsp;Retour</i></span></a>
+{% endblock %}
