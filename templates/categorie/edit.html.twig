@@ -3,7 +3,7 @@
 {% block title %}Modifier Catégorie{% endblock %}
 
 {% block body %}
-    {% if is_granted('ROLE_Editor') %}
+
     {{ include('categorie/_form.html.twig', {'button_label': 'Modifier'}) }}
 <div class="container">
     <div class="row">
@@ -13,5 +13,5 @@
     {{ include('categorie/_delete_form.html.twig') }}
     </div>
 </div>
-    {% endif %}
+
 {% endblock %}
